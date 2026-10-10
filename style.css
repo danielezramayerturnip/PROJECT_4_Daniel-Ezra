@@ -1,0 +1,65 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f5f1ea;
+}
+
+/* header */
+.kepala-halaman {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px 16px;
+  background-color: #3a4a5c;
+  color: #f5f1ea;
+  border-bottom: 4px solid #e8b572;
+}
+
+.kepala-halaman h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* galeri */
+.galeri {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+/* gambar galeri */
+.galeri img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #e8b572;
+  box-shadow: 0 4px 12px rgba(58, 74, 92, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efek hover gambar */
+.galeri img:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(58, 74, 92, 0.3);
+}
+
+/* elemen pseudo penyeimbang */
+.galeri::after {
+  content: "";
+  width: 350px;
+}
